@@ -14,7 +14,7 @@ float gpa - student's GPA
 # Prompt the user for the student's last name 'ZZZ' quits the app
 lName = input("Enter the student's last name or ZZZ to quit.")
 
-if(lName != "ZZZ"): # Only continue if 'ZZZ' was not entered
+while(lName != "ZZZ"): # Only continue if 'ZZZ' was not entered
     fName = input("Enter the student's first name.")
     gpa = float(input("Enter the student's GPA."))
 
@@ -24,3 +24,5 @@ if(lName != "ZZZ"): # Only continue if 'ZZZ' was not entered
         print("Congrats! " + fName + " " + lName + " has made the Honor Roll.")
     else:
         print("Sorry. " + fName + " " + lName + " did not make either list.")
+        
+    lName = input("Enter the student's last name or ZZZ to quit.")
